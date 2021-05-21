@@ -1,0 +1,19 @@
+@charset 'utf-8';
+
+@import '_variables';
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+main {
+    display: block;
+    background-color: $color1;
+}
+
+
+

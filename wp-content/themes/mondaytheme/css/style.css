@@ -1,0 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+main {
+  display: block;
+  background-color: #666666;
+}
+/*# sourceMappingURL=style.css.map */
