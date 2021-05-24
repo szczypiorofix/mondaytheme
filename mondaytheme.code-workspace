@@ -24,7 +24,10 @@
 	},
 	"extensions": {
 		"recommendations": [
-			"ritwickdey.live-sass"
+			"ritwickdey.live-sass",
+			"msjsdiag.debugger-for-chrome",
+			"bmewburn.vscode-intelephense-client",
+			"felixfbecker.php-debug"
 		]
 	}
 }
