@@ -364,4 +364,21 @@ main {
   display: block;
   margin: 30px;
 }
+
+.main-page-section .single-post-small-part {
+  padding: 20px 16px;
+}
+
+.main-page-section .single-post-small-part a.the-permalink {
+  text-decoration: none;
+  color: #846a6aff;
+}
+
+.main-page-section .single-post-small-part .the-title h1 {
+  font-size: 28px;
+}
+
+.main-page-section .single-post-small-part .the-excerpt {
+  font-size: 12px;
+}
 /*# sourceMappingURL=style.css.map */

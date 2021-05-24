@@ -15,20 +15,15 @@
 ?>
 
     <main>
-        
-        <h1>Monday Theme</h1>
+        <?php
+            
+        if (is_home()) {
 
-        <p>
-            <?php
-                
-            if (is_home()) {
+            get_template_part('partials/mainpage', 'section');
 
-                get_template_part('partials/mainpage', 'section');
+        }    
 
-            }    
-
-            ?>
-        </p>
+        ?>
     </main>
 
 

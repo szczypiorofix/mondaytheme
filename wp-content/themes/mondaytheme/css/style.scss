@@ -30,3 +30,46 @@ main {
 }
 
 
+
+.main-page-section {
+
+    // padding: 20px;
+
+    .single-post-small-part {
+        padding: 20px 16px;
+
+        a.the-permalink {
+            text-decoration: none;
+            color: $color_deep-taupe;
+        }
+
+        .the-thumbnail {
+
+        }
+    
+        .the-title {
+            h1 {
+                font-size: 28px;
+            }
+            
+        }
+    
+        .the-excerpt {
+            font-size: 12px;
+        }
+    }
+
+}
+
+
+
+.single-post-section {
+    .single-post-main-part {
+        .the-thumbnail {
+
+        }
+        .the-title {
+
+        }
+    }
+}
