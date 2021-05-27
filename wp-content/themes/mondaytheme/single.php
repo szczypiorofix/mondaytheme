@@ -1,5 +1,9 @@
 <?php
 
+/* 
+* Single post template
+*/
+
     get_header();
 
 ?>

@@ -45,7 +45,9 @@
 
         <nav>
 
-            <!-- <h2>NAVBAR</h2> -->
+            <?php
+                wp_nav_menu( array( 'theme-location' => 'primary' ) );
+            ?>
 
         </nav>
 

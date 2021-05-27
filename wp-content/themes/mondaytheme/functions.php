@@ -15,8 +15,28 @@ if (! defined('ABSPATH')) { exit(); }
 add_theme_support( 'post-thumbnails', array( 'post' ) );
 add_theme_support( 'menus' );
 add_theme_support( 'widgets' );
+add_theme_support(
+    'html5',
+    array(
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+        'style',
+        'script',
+        'navigation-widgets',
+    )
+);
 
 
+
+
+register_nav_menus(
+    array(
+        'primary' => esc_html__( 'Menu w nagłówku', 'mondaytheme' ),
+        'footer'  => __( 'Menu w stopce', 'mondaytheme' ),
+    )
+);
 
 
 
