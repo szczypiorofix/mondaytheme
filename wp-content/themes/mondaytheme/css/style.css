@@ -355,9 +355,55 @@ html, body {
   color: #353b3cff;
 }
 
+body {
+  background-color: #846a6aff;
+}
+
 main {
   display: block;
   margin: 0;
+  background-color: #846a6aff;
+  color: #353b3cff;
+}
+
+main .container {
+  background-color: #a2999eff;
+}
+
+header {
+  padding-top: 20px;
+}
+
+header ul.menu {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+header ul.menu a {
+  text-decoration: none;
+  color: #c6c7c4ff;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  padding: 6px 12px;
+}
+
+header ul.menu a:hover {
+  color: #eef0f2ff;
+}
+
+footer h2 {
+  text-align: center;
 }
 
 .page-404-container {
@@ -374,11 +420,23 @@ main {
   color: #846a6aff;
 }
 
+.main-page-section .single-post-small-part .the-thumbnail {
+  max-width: 300px;
+}
+
 .main-page-section .single-post-small-part .the-title h1 {
   font-size: 28px;
 }
 
 .main-page-section .single-post-small-part .the-excerpt {
   font-size: 12px;
+}
+
+.single-post-section .single-post-main-part .the-thumbnail {
+  max-width: 600px;
+}
+
+.single-post-section .single-post-main-part .the-title {
+  line-height: normal;
 }
 /*# sourceMappingURL=style.css.map */

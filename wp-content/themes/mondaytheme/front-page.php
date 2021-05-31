@@ -9,14 +9,11 @@
 
 ?>
 
-<section>
+<main>
     <div class="container">
         <?php
             if (have_posts()) {
                 ?>
-                <div>
-                    <h1>Front Page:</h1>
-                </div>
                 <div>
                     <?php
                         while(have_posts()) {
@@ -33,7 +30,7 @@
             }
         ?>
     </div>
-</section>
+</main>
 
 
 <?php

@@ -43,7 +43,7 @@
 
     <header>
 
-        <nav>
+        <nav class="container">
 
             <?php
                 wp_nav_menu( array( 'theme-location' => 'primary' ) );

@@ -17,17 +17,17 @@
     <main>
         <?php
             
-        if (is_home()) {
+        // if (is_home()) {
 
-            get_template_part('partials/mainpage', 'section');
+        //     get_template_part('partials/mainpage', 'section');
 
-        } elseif (is_front_page()) {
-            echo 'Front page';
-        } else {
-            echo 'Jakaś strona';
-        }
+        // } elseif (is_front_page()) {
+        //     echo 'Front page';
+        // } else {
+        //     echo 'Jakaś strona';
+        // }
 
-        ?>
+        // ?>
     </main>
 
 
