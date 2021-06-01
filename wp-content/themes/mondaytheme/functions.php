@@ -33,7 +33,7 @@ add_theme_support(
 add_theme_support(
     'recommend-plugins',
     array(
-        'wpforms-lite'             => array(
+        'wpforms-lite'        => array(
             'name'            => esc_html__( 'Contact Form by WPForms', 'onepress' ),
             'active_filename' => 'wpforms-lite/wpforms.php',
         ),
