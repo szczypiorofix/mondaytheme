@@ -5,6 +5,7 @@
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories
 wp-content/*
+
 # !wp-content/mu-plugins/
 # !wp-content/plugins/
 !wp-content/themes/
@@ -62,6 +63,10 @@ Thumbs.db
 # -------------------------
 
 # track these files, if they exist
+# CircleCI files
+!.circleci/
+!deploy_app.js
+
 !.gitignore
 !.editorconfig
 !README.md
