@@ -6,7 +6,7 @@ var reactAppConfig = {
     password: process.env.FTPPASS,
     host: process.env.FTPHOST,
     port: 21,
-    localRoot: __dirname + "/build/",
+    localRoot: __dirname + "/wp-content/themes/mondaytheme/",
     remoteRoot: '/public_html/',
     deleteRemote: false,
     include: ['*']
