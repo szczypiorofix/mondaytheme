@@ -29,6 +29,21 @@ add_theme_support(
 );
 
 
+// Recommend plugins.
+add_theme_support(
+    'recommend-plugins',
+    array(
+        'wpforms-lite'             => array(
+            'name'            => esc_html__( 'Contact Form by WPForms', 'onepress' ),
+            'active_filename' => 'wpforms-lite/wpforms.php',
+        ),
+        'famethemes-demo-importer' => array(
+            'name'            => esc_html__( 'Famethemes Demo Importer', 'onepress' ),
+            'active_filename' => 'famethemes-demo-importer/famethemes-demo-importer.php',
+        ),
+    )
+);
+
 
 register_nav_menus(
     array(

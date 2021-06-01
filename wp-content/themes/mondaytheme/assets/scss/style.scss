@@ -4,7 +4,16 @@
 
 @import 'normalize';
 
-@import '_variables';
+// @import '_variables';
+
+/** =============== COLORS =============== */
+$color_cultured: #eef0f2ff;
+$color_silver: #c6c7c4ff;
+$color_spanish-gray: #a2999eff;
+$color_deep-taupe: #846a6aff;
+$color_onyx: #353b3cff;
+
+
 
 
 * {
@@ -15,26 +24,14 @@
 html, body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: $color_silver;
+    background-color: $color_cultured;
     color: $color_onyx;
-}
-
-
-body {
-    background-color: $color_deep-taupe;
 }
 
 
 main {
     display: block;
     margin: 0;
-    background-color: $color_deep-taupe;
-    color: $color_onyx;
-
-    .container {
-        background-color: $color_spanish-gray
-    }
-
 }
 
 
@@ -53,12 +50,14 @@ header {
 
         a {
             text-decoration: none;
-            color: $color_silver;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: $color_deep-taupe;
             transition: color 0.2s ease-in-out;
             padding: 6px 12px;
 
             &:hover {
-                color: $color_cultured;
+                color: $color_onyx;
             }
         }
 
