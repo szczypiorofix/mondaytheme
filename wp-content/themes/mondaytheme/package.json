@@ -15,5 +15,8 @@
   "license": "GPL-2.0",
   "devDependencies": {
     "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "ftp-deploy": "^2.4.1"
   }
 }
