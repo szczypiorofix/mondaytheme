@@ -9,7 +9,7 @@
 
 ?>
 
-<section>
+<main>
     <div class="container">
         <?php
             if (have_posts()) {
@@ -19,21 +19,14 @@
                 </div>
                 <div>
                     <?php
-                        while(have_posts()) {
-                            the_post();
-
-                            the_title("<h1>", "</h1>");
-
-                            the_content();
-
-                        }
+                        get_template_part('partials/mainpage', 'section');
                     ?>
                 </div>
                 <?php
             }
         ?>
     </div>
-</section>
+ </main>
 
 
 <?php

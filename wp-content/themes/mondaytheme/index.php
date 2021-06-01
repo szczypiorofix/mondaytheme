@@ -14,22 +14,28 @@
 
 ?>
 
-    <main>
+<main>
+    <div class="container">
         <?php
-            
-        // if (is_home()) {
+            if (have_posts()) {
+                ?>
+                <div>
+                    <?php
+                        while(have_posts()) {
+                            the_post();
 
-        //     get_template_part('partials/mainpage', 'section');
+                            the_title("<h1>", "</h1>");
 
-        // } elseif (is_front_page()) {
-        //     echo 'Front page';
-        // } else {
-        //     echo 'Jakaś strona';
-        // }
+                            the_content();
 
-        // ?>
-    </main>
-
+                        }
+                    ?>
+                </div>
+                <?php
+            }
+        ?>
+    </div>
+</main>
 
 
 <?php
