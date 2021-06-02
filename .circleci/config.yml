@@ -5,8 +5,7 @@ jobs:
        - image: circleci/node:latest
      steps:
        - checkout
-       - run: npm install
-       - run: ls
+       - run: npm install --prefix ./wp-content/themes/mondaytheme/
        - run: node wp-content/themes/mondaytheme/deploy_app.js
 
 workflows:

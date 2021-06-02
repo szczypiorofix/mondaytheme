@@ -1,22 +1,5 @@
 {
-  "name": "mondaytheme",
-  "version": "1.0.0",
-  "description": "Monday Theme - just another Wordpress theme",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch assets/scss -o assets/css --output-style compressed --sourceMap true"
-  },
-  "keywords": [
-    "wordpress",
-    "sass"
-  ],
-  "author": "szczypiorofix",
-  "license": "GPL-2.0",
-  "devDependencies": {
-    "node-sass": "^6.0.0"
-  },
   "dependencies": {
-    "ftp-deploy": "^2.4.1"
+    "mondaytheme": "file:../../.."
   }
 }
