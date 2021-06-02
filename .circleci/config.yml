@@ -7,6 +7,7 @@ jobs:
        - checkout
        - run: ls
        - run: cd wp-content/themes/mondaytheme
+       - run: ls
        - run: npm install
        - run: node deploy_app.js
 
