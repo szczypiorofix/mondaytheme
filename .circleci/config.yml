@@ -6,7 +6,7 @@ jobs:
      steps:
        - checkout
        - run: npm install
-       - run: node deploy_app.js
+       - run: node wp-content/themes/mondaytheme/deploy_app.js
 
 workflows:
   version: 2
