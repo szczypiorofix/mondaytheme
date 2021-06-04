@@ -7,7 +7,65 @@
  * @since 1.0
  */
 
-if (! defined('ABSPATH')) { exit(); }
+if (! defined('ABSPATH')) {
+    exit();
+}
+
+
+// update_option( 'mondaytheme_installed', '0' );
+
+
+if ( ! function_exists( 'mondaytheme_setup' ) ) {
+
+    function mondaytheme_setup() {
+             
+        add_theme_support( 'post-thumbnails', array('post', 'szkolenia') );
+        add_theme_support( 'menus' );
+        add_theme_support( 'widgets' );
+        add_theme_support( 'automatic-feed-links' );
+        add_theme_support(
+            'html5',
+            array(
+                'comment-form',
+                'comment-list',
+                'gallery',
+                'caption',
+                'style',
+                'script',
+                'navigation-widgets',
+            )
+        );
+
+    }
+}
+
+add_action( 'after_setup_theme', 'mondaytheme_setup' );
+
+
+
+
+
+function mondaytheme_insert_predefided_pages() {
+    if ( !get_option( 'mondaytheme_installed' ) || get_option( 'mondaytheme_installed' ) == '0' ) {
+
+        $postArgs = array(
+            'post_title'        => 'Kontakt',
+            'post_type'         => 'page',
+            'post_status'       => 'publish',
+            'page_template'     => 'Strona kontaktowa',
+            'post_content'      => 'Domyślna strona kontaktowa'
+        );
+        var_dump( wp_insert_post( $postArgs ) );
+
+        update_option( 'mondaytheme_installed', '1' );
+    }
+}
+
+add_action( 'after_setup_theme', 'mondaytheme_insert_predefided_pages');
+
+
+
+
 
 
 

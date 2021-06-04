@@ -15,6 +15,13 @@
             if (have_posts()) {
                 ?>
                 <div>
+                    <div>
+                    <?php
+                        echo ( (get_option( 'mondaytheme_installed' ) &&  ( get_option( 'mondaytheme_installed' ) == '1' ) ) 
+                        ? 'Zainstalowano motyw' 
+                        : 'Pierwsza instalacja.');
+                        echo '<br>'. get_option( 'mondaytheme_installed' ) .'</br>';
+                    ?></div>
                     <?php
                         while(have_posts()) {
                             the_post();
@@ -26,6 +33,7 @@
                         }
                     ?>
                 </div>
+
                 <?php
             }
         ?>
